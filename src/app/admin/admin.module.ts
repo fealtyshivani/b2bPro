@@ -12,26 +12,26 @@ import { AddemployeeComponent } from './components/addemployee/addemployee.compo
 import { SettingComponent } from './components/setting/setting.component';
 import { ClientReviewComponent } from './components/client-review/client-review.component';
 import { ProductComponent } from './components/product/product.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
-    
-  
     DashboardComponent,
-            EmployeeComponent,
-            MainComponent,
-            SidebarComponent,
-            TopbarComponent,
-            AddemployeeComponent,
-            SettingComponent,
-            ClientReviewComponent,
-            ProductComponent
+    EmployeeComponent,
+    MainComponent,
+    SidebarComponent,
+    TopbarComponent,
+    AddemployeeComponent,
+    SettingComponent,
+    ClientReviewComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    DataTablesModule
   ]
 })
 export class AdminModule { }

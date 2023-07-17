@@ -1,8 +1,10 @@
 <div class="container mt-5" id="addEmployeeData">
-    <h2>Add Employee</h2>
+  <div class="row mb-4 mt-4 bg-light">
+    <h2 class="col-md-12 my-2 fs-5 ">Add Employee</h2>
+  </div>
     <form [formGroup]="myForm" class="row mt-5">
       <div class="form-group col-md-4 mt-3">
-        <label for="employee-id">Employee ID:</label>
+        <label for="employee-id">Employee ID</label>
         <input
           type="text"
           class="form-control p-2"
@@ -23,7 +25,7 @@
         </div>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="employee-name">Employee Name :</label>
+        <label for="employee-name">Employee Name</label>
         <input
           type="text"
           class="form-control"
@@ -45,7 +47,7 @@
         </div>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="email">Email :</label>
+        <label for="email">Email</label>
         <input
           type="email"
           class="form-control"
@@ -66,7 +68,7 @@
       </div>
   
       <div class="form-group col-md-4 mt-3">
-        <label for="department">Department :</label>
+        <label for="department">Department</label>
         <input
           type="text"
           class="form-control"
@@ -87,12 +89,12 @@
         </div>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="salary">Salary :</label>
+        <label for="salary">Contact No.</label>
         <input
           type="text"
           class="form-control"
           id="salary"
-          placeholder="Salary"
+          placeholder="Contact No."
           formControlName="salary"
         />
         <div
@@ -108,7 +110,7 @@
         </div>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="status">Status:</label>
+        <label for="status">Status</label>
         <select class="form-control" formControlName="status" id="status">
           <option value="active">Active</option>
           <option value="inactive">Inactive</option>
@@ -127,7 +129,7 @@
         </div>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="joining-date">Joining Date:</label>
+        <label for="joining-date">Joining Date</label>
         <input
           type="date"
           class="form-control"
@@ -169,18 +171,21 @@
         </div>
       </div>
     </form>
-    <button
+    <div class="ms-3">
+      <button
       type="submit"
-      class="btn btn-primary col-md-2 mt-5"
+      class="btn btn-primary col-md-1 mt-5 border-0 me-2"
       (click)="onSubmit()"
     >
       Save
     </button>
     <button
       type="submit"
-      class="btn btn-primary col-md-2 mt-5 bg-danger border-0"
+      class="btn btn-primary col-md-1 mt-5 bg-danger border-0"
+      (click)="onSubmit()"
     >
       Cancel
     </button>
+    </div>
   </div>
   

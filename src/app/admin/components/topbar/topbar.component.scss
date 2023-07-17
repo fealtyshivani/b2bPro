@@ -1,6 +1,13 @@
 
+.admin-profile-btn{
+    float: right !important;
+ }
 @media screen and (max-width:600px) {
-
+    .navProfilebtn{
+        position: absolute;
+        top:3%;
+        right:1%;
+    }
     .sidebarTopLogo {
         border: none !important;
     }
@@ -8,6 +15,9 @@
         display: none;
     }
     .topBarLogoHelpingText{
+        display: none;
+    }
+    .adminNameWithImage{
         display: none;
     }
     
