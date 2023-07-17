@@ -1,0 +1,25 @@
+
+
+.dashboardMenu {
+    list-style-type: none;
+    font-weight: 600;
+    padding: 0;
+    
+}
+
+.dashboardMenu li {
+    list-style-position: inside;
+    padding: 5% !important;
+    cursor: pointer;
+}
+
+.dashboardMenu li:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+.dashboardMenu li:hover {
+    background-color: gray;
+    color: white;
+}
+
+

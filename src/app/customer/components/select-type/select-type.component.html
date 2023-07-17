@@ -1,0 +1,73 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row py-4">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="col-md-5 shadow mx-auto p-2 m-1 text-center">
+  
+          <div class="mb-3">
+            <select [(ngModel)]="brandName" class=" form-control border-0 border-bottom text-secondary col-12" (change)="setBrand()">
+              <option value="">Select Brand</option>
+              <option value="Amazon">Amazon</option>
+              <option value="Shopify">Shopify</option>
+              <option value="Costco">Costco</option>
+            </select>
+          </div>
+  
+          <div *ngIf="showSearchFiltter">
+            <div class="mb-3">
+              <select [(ngModel)]="searchBy" class="form-control border-0 border-bottom text-secondary col-12" (change)="setSeach()">
+                <option value="">{{brandName}} Select</option>
+                <option value="Name">Product Name</option>
+                <option value="ASIN">ASIN</option>
+                <option value="SKUs">SKU's</option>
+              </select>
+            </div>
+  
+            <div *ngIf="showSearchInput">
+              <div class="mb-3">
+                <div class="input-group">
+                  <form #productForm="ngForm" (ngSubmit)="searchProduct(productForm.value)" class="col-12">
+                    <input class="p-2 col-12 border-end-0 border rounded-pill" type="text"
+                      placeholder="Search By Product {{searchBy}}" id="search" name="search" ngModel required>
+                    <span class="input-group-append searchbtn">
+                      <button class="btn text-white btn-outline-secondary border-bottom-0 border rounded-pill searchBtn"
+                        type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                  </form>
+                </div>
+              </div>
+  
+              <div *ngIf="product!=null" class="minwidth">
+                <form action="">
+                  <div class="card mb-4 text-start">
+                    <img class="col-md-4" src="{{ product.image }}" alt="Product Image">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ product.productName }}</h5>
+                      <p class="card-text"><b>ASIN:</b> {{ product.asin }}</p>
+                      <p class="card-text"><b>SKU:</b> {{ product.sku }}</p>
+                      <p class="card-text"><b>Price:</b> {{ product.price }}</p>
+                      <p class="card-text"><b>Description:</b> {{ prodDesc }}
+                        <span *ngIf="showMoreDesc === false" (click)="seeMore()" class="pointer text-primary fw-bold">See
+                          More ...</span>
+                        <span *ngIf="showMoreDesc === true" (click)="lessMore()" class="pointer text-primary fw-bold">less
+                          More ...</span>
+                      </p>
+                      <p class="card-text"><b>Category:</b> {{ product.category }}</p>
+                      <div class="form-group mt-2">
+                        <label for="quantity" class="fw-bold">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" min="0">
+                      </div>               
+                    </div>
+                  </div>
+                </form>
+                <button class="btn btn-secondary mt-1 mb-3" style="background-color: #de6262;">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- <app-footer></app-footer> -->

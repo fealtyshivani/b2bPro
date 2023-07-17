@@ -1,0 +1,17 @@
+<div class="container-fluid p-0">
+    <app-sidebar></app-sidebar>
+
+    <div class="row">
+        <div class="row admin-navContainer shadow sticky-top">
+            <div class="col-sm-12 bg-white border-2 p-0">
+                <app-topbar></app-topbar>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 bg-white admin-dataContainer">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.searchBtn{    
+    position: absolute;
+    right: 0%;
+    top: 4%;
+    background-color: #de6262;
+}
+*:focus{
+    outline: solid 1px skyblue;
+}
+.pointer{
+    cursor: pointer;
+}
+.minwidth {
+ overflow-y: scroll;   
+}
+.minwidth::-webkit-scrollbar {
+    width: 0px;
+  }

@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.row{
+    margin:0px !important;
+    padding: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .row{
+        margin:0px !important;
+        padding: 0px !important;
+    }
+    
+    .responsiveTable{
+        overflow-x: scroll;
+    }
+        
+}

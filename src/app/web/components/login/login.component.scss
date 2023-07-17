@@ -1,0 +1,64 @@
+.login-sec .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-sec .copy-text i {
+    color: #FEB58A;
+}
+
+.login-sec .copy-text a {
+    color: #E36262;
+}
+
+.login-sec h2 {
+    // / margin-bottom: 8px; /
+    font-weight: 800;
+    font-size: 30px;
+    color: #DE6262;
+}
+
+.login-sec h2:after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: #FEB58A;
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.btn-login {
+    background: #DE6262;
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-sec {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 8px 8px 6px #00000033;
+    border: 1px solid #00000021;
+    min-height: 455px;
+    background: #f6f4f4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.login-form {
+    padding: 20px 30px;
+}
+
+.alreadyreg {
+    font-size: 14px;
+}
+
+.right-img {
+    position: relative;
+    top: -30px;
+}

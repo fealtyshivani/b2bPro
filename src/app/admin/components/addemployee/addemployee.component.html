@@ -1,0 +1,186 @@
+<div class="container mt-5" id="addEmployeeData">
+    <h2>Add Employee</h2>
+    <form [formGroup]="myForm" class="row mt-5">
+      <div class="form-group col-md-4 mt-3">
+        <label for="employee-id">Employee ID:</label>
+        <input
+          type="text"
+          class="form-control p-2"
+          id="employee-id"
+          placeholder="Employee ID"
+          name="id"
+          formControlName="id"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.id.invalid &&
+            (formControls.id.dirty || formControls.id.touched)
+          "
+        >
+          <div *ngIf="formControls.id.errors.required">Email is required.</div>
+          <div *ngIf="formControls.id.errors.email">Invalid email format.</div>
+        </div>
+      </div>
+      <div class="form-group col-md-4 mt-3">
+        <label for="employee-name">Employee Name :</label>
+        <input
+          type="text"
+          class="form-control"
+          id="employee-name"
+          placeholder="Employee Name"
+          formControlName="name"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.name.invalid &&
+            (formControls.name.dirty || formControls.name.touched)
+          "
+        >
+          <div *ngIf="formControls.name.errors.required">Name is required.</div>
+          <div *ngIf="formControls.name.errors.minlength">
+            Name should be at least 3 characters long.
+          </div>
+        </div>
+      </div>
+      <div class="form-group col-md-4 mt-3">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Email"
+          formControlName="email"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.email.invalid &&
+            (formControls.email.dirty || formControls.email.touched)
+          "
+        >
+          <div *ngIf="formControls.email.errors.required">Email is required.</div>
+          <div *ngIf="formControls.email.errors.email">Invalid email format.</div>
+        </div>
+      </div>
+  
+      <div class="form-group col-md-4 mt-3">
+        <label for="department">Department :</label>
+        <input
+          type="text"
+          class="form-control"
+          id="department"
+          placeholder="department"
+          formControlName="department"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.department.invalid &&
+            (formControls.department.dirty || formControls.department.touched)
+          "
+        >
+          <div *ngIf="formControls.department.errors.required">
+            department is required.
+          </div>
+        </div>
+      </div>
+      <div class="form-group col-md-4 mt-3">
+        <label for="salary">Salary :</label>
+        <input
+          type="text"
+          class="form-control"
+          id="salary"
+          placeholder="Salary"
+          formControlName="salary"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.salary.invalid &&
+            (formControls.salary.dirty || formControls.salary.touched)
+          "
+        >
+          <div *ngIf="formControls.salary.errors.required">
+            salary is required.
+          </div>
+        </div>
+      </div>
+      <div class="form-group col-md-4 mt-3">
+        <label for="status">Status:</label>
+        <select class="form-control" formControlName="status" id="status">
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+          <option value="on-leave">On Leave</option>
+        </select>
+        <div
+          class="validate"
+          *ngIf="
+            formControls.status.invalid &&
+            (formControls.status.dirty || formControls.status.touched)
+          "
+        >
+          <div *ngIf="formControls.status.errors.required">
+            status is required.
+          </div>
+        </div>
+      </div>
+      <div class="form-group col-md-4 mt-3">
+        <label for="joining-date">Joining Date:</label>
+        <input
+          type="date"
+          class="form-control"
+          id="joining-date"
+          formControlName="joiningDate"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.joiningDate.invalid &&
+            (formControls.joiningDate.dirty || formControls.joiningDate.touched)
+          "
+        >
+          <div *ngIf="formControls.joiningDate.errors.required">
+            joiningDate is required.
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-group col-md-4 mt-3">
+        <label for="address">Address</label>
+        <input
+          type="text"
+          class="form-control"
+          id="address"
+          placeholder="Address"
+          formControlName="address"
+        />
+        <div
+          class="validate"
+          *ngIf="
+            formControls.address.invalid &&
+            (formControls.address.dirty || formControls.address.touched)
+          "
+        >
+          <div *ngIf="formControls.address.errors.required">
+            address is required.
+          </div>
+        </div>
+      </div>
+    </form>
+    <button
+      type="submit"
+      class="btn btn-primary col-md-2 mt-5"
+      (click)="onSubmit()"
+    >
+      Save
+    </button>
+    <button
+      type="submit"
+      class="btn btn-primary col-md-2 mt-5 bg-danger border-0"
+    >
+      Cancel
+    </button>
+  </div>
+  

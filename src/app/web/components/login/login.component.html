@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+    <section class="login-block">
+        <div class="container mt-4 pt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="login-sec">
+                        <h2 class="text-center">Login Page</h2>
+                        <form class="login-form">
+                            <div class="mb-4">
+                                <label for="">Role</label>
+                                <select name="" class="form-control" id="">
+                                    <option value="" disabled selected>Select the Role</option>
+                                    <option value="">Admin</option>
+                                    <option value="">Customer</option>
+                                    <option value="">Employee</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                                <input type="email" class="form-control" placeholder=" Enter Email" aria-label="Email" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-unlock" aria-hidden="true"></i>
+                                </span>
+                                <input type="password" class="form-control" placeholder="Enter Password" aria-label="password" aria-describedby="basic-addon1">
+                            </div>   
+                        </form>
+                        <div class="mt-2 text-center">
+                            <button type="submit" class="btn btn-login float-right" (click) ="saveData()">Submit</button>
+                            <br>
+                            <br>
+                            <a href="#" class="alreadyreg">Forgot Password ?</a>
+                        </div>
+                        <p class="text-center alreadyreg pt-2">If you are not registered <a href="#">Click here</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-8 text-end">
+                    <div class="right-img mt-5">
+                        <img class="img-fluid" src="../../../../assets/image/order-fulfilment-slide1.png" alt="Shopping">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<app-footer></app-footer>
