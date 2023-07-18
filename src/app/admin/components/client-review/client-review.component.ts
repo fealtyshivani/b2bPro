@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -9,6 +10,8 @@ import { Subject } from 'rxjs';
 export class ClientReviewComponent implements OnInit {
   dtoptions : DataTables.Settings = {};
   dtTrigger : Subject<any> = new Subject<any>();
+
+  constructor(private router: Router){}
 
   ngOnInit(): void {
     this.dtoptions = {
@@ -25,5 +28,9 @@ export class ClientReviewComponent implements OnInit {
     };
 
     // this.dtTrigger.next(null);
+  }
+
+  invoice(){
+    this.router.navigate(['/admin/invoice']);
   }
 }

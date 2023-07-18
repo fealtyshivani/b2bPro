@@ -15,7 +15,7 @@
                 </tr>
             </thead>
             <tbody class="p-3">
-                <tr >
+                <tr>
                     <td>1</td>
                     <td>John</td>
                     <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquid illo atque deleniti quasi culpa, non, fugit minima perspiciatis inventore minus beatae possimus. Ipsa eligendi pariatur praesentium nostrum et eos.</td>
@@ -23,6 +23,10 @@
                     <td>Active</td>
 
                     <td>
+                        <button type="button" class="btn text-success p-0 m-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle" (click)="invoice()">
+                            <i class="fa fa-file" aria-hidden="true"></i>
+                        </button>
                         <button type="button" class="btn text-danger p-0 m-2" data-bs-toggle="modal"
                         data-bs-target="#exampleModalToggle">
                             <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -37,7 +41,10 @@
                     <td>Inactive</td>
 
                     <td>
-                       
+                        <button type="button" class="btn text-success p-0 m-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle">
+                            <i class="fa fa-file" aria-hidden="true"></i>
+                        </button>
                         <button type="button" class="btn text-danger p-0 m-2" data-bs-toggle="modal"
                         data-bs-target="#exampleModalToggle">
                             <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -53,18 +60,14 @@
                     <td>Active</td>
 
                     <td>
-                        <!-- <button type="button" class="btn text-danger p-0 m-2" data-bs-toggle="modal"
+                        <button type="button" class="btn text-success p-0 m-2" data-bs-toggle="modal"
                         data-bs-target="#exampleModalToggle">
-                            <i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i>
-                        </button> -->
+                            <i class="fa fa-file" aria-hidden="true"></i>
+                        </button>
                         <button type="button" class="btn text-danger p-0 m-2" data-bs-toggle="modal"
                         data-bs-target="#exampleModalToggle">
                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                         </button>
-                        <!-- <button type="button" class="btn text-danger p-0 m-2" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalToggle">
-                            <i class="fa fa-sign-in text-success" aria-hidden="true"></i>
-                        </button> -->
                     </td>
                 </tr>
             </tbody>

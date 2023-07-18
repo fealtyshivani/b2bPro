@@ -13,6 +13,7 @@ import { SettingComponent } from './components/setting/setting.component';
 import { ClientReviewComponent } from './components/client-review/client-review.component';
 import { ProductComponent } from './components/product/product.component';
 import { DataTablesModule } from 'angular-datatables';
+import { InvoiceComponent } from './components/invoice/invoice.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DataTablesModule } from 'angular-datatables';
     AddemployeeComponent,
     SettingComponent,
     ClientReviewComponent,
-    ProductComponent
+    ProductComponent,
+    InvoiceComponent
   ],
   imports: [
     CommonModule,
