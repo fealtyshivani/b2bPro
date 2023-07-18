@@ -6,27 +6,27 @@
                 <div class="col-md-4">
                     <div class="login-sec">
                         <h2 class="text-center">Login Page</h2>
-                        <form class="login-form">
+                        <form class="login-form" [formGroup]="loginForm">
                             <div class="mb-4">
                                 <label for="">Role</label>
-                                <select name="" class="form-control" id="">
-                                    <option value="" disabled selected>Select the Role</option>
-                                    <option value="">Admin</option>
-                                    <option value="">Customer</option>
-                                    <option value="">Employee</option>
+                                <select name="role" formControlName="role"  class="form-control"  name="role">
+                                    <option value="" >Select the Role</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="customer">Customer</option>
+                                    <option value="employee">Employee</option>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </span>
-                                <input type="email" class="form-control" placeholder=" Enter Email" aria-label="Email" aria-describedby="basic-addon1">
+                                <input type="email" formControlName="email"  class="form-control" placeholder=" Enter Email" aria-label="Email" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">
                                     <i class="fa fa-unlock" aria-hidden="true"></i>
                                 </span>
-                                <input type="password" class="form-control" placeholder="Enter Password" aria-label="password" aria-describedby="basic-addon1">
+                                <input type="password" formControlName="password"  class="form-control" placeholder="Enter Password" aria-label="password" aria-describedby="basic-addon1">
                             </div>   
                         </form>
                         <div class="mt-2 text-center">

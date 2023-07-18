@@ -6,7 +6,7 @@
   
           <div class="mb-3">
             <select [(ngModel)]="brandName" class=" form-control border-0 border-bottom text-secondary col-12" (change)="setBrand()">
-              <option value="">Select Brand</option>
+              <option value="" disabled selected>Select Brand</option>
               <option value="Amazon">Amazon</option>
               <option value="Shopify">Shopify</option>
               <option value="Costco">Costco</option>
@@ -16,9 +16,9 @@
           <div *ngIf="showSearchFiltter">
             <div class="mb-3">
               <select [(ngModel)]="searchBy" class="form-control border-0 border-bottom text-secondary col-12" (change)="setSeach()">
-                <option value="">{{brandName}} Select</option>
+                <option value="" disabled selected>Search by ASIN, Product Name</option>
                 <option value="Name">Product Name</option>
-                <option value="ASIN">ASIN</option>
+                <option value="ASIN">ASIN No.</option>
                 <option value="SKUs">SKU's</option>
               </select>
             </div>

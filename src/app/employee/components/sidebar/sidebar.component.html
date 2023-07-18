@@ -1,0 +1,48 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="dashboardMenu" aria-labelledby="dashboardMenu">
+    <div class="offcanvas-header">
+        <div class="offcanvas-title sidebarTopLogo">
+            <img src="../../../../assets/images/logo.jpg" width="30vh" alt="logo" />
+            Bussiness
+        </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body float-start">
+        <div>
+            <div class="text-center">
+                <div class="mx-auto sidebarLogo">
+                    <img src="../../../../assets/images/logo.jpg" class="img-thumbnail rounded-circle shadow-lg" width="30%"
+                        alt="logo" />
+                </div>
+                <h6>Bussiness to Bussiness</h6>
+            </div>
+            <hr />
+            <div>
+                <ul class="dashboardMenu">
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="routeChange('employee/dashboard')">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="routeChange('employee/Overview')">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                        Overview
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="routeChange('employee/product')">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        Projects
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="routeChange('employee/product')">
+                        <i class="fa-solid fa-timeline"></i>
+                        Timeline
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="routeChange('employee/employee')">
+                       <i class="fa-solid fa-chart-line"></i>
+                        Activity
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="routeChange('employee/setting')">
+                        <i class="fa fa-gear" aria-hidden="true"></i>
+                        Setting
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>

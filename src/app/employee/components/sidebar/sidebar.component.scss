@@ -1,0 +1,31 @@
+.offcanvas-body::-webkit-scrollbar{
+    width:2px;
+}
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); 
+  border-radius: 10px;
+}
+
+.dashboardMenu {
+    list-style-type: none;
+    font-weight: 600;
+    padding: 0;
+    
+}
+
+.dashboardMenu li {
+    list-style-position: inside;
+    padding: 2% !important;
+    cursor: pointer;
+    border-radius: 1vh;
+    margin-bottom: 2%;
+}
+
+.dashboardMenu li:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+.dashboardMenu li:hover {
+    background-color: gray;
+    color: white;
+}
