@@ -12,23 +12,20 @@
       </a>
     </div>
 
-    <div>
-      <form class="d-flex float-start me-4">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      
-      <div class="d-flex float-start me-3 mt-2 justify-content-center">
-        <i class="fa-regular fa-bell fs-5 "></i>
-       </div>
 
-      <a class="navProfilebtn btn float-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    <form class="d-flex float-start col-sm-4">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+    <div class="ms-auto adminProfile">
+      <a class=" btn float-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
         aria-controls="offcanvasExample">
-        <span id="adminNameWithImage">Admin Name</span>
+        <i class="fa-regular fa-bell pe-4"></i>
+        <span class="adminNameWithImage">Admin Name</span>
         <img src="../../../../assets/images/user.png" height="20vh" class="border rounded-circle" alt="adminImage">
       </a>
     </div>
-
   </div>
 </nav>
 
@@ -44,7 +41,7 @@
         <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile
       </a>
       <a href="#" class="list-group-item list-group-item-action">
-        <i class="fa fa-gear" aria-hidden="true"></i> 
+        <i class="fa fa-gear" aria-hidden="true"></i>
         User settings
       </a>
       <a href="#" class="list-group-item list-group-item-action text-danger" (click)="routeChange('admin/logout')">
